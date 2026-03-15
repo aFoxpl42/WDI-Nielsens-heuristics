@@ -5,3 +5,4 @@ Autor: Jakob Nielsen
 Tytuł: 10 Usability Heuristics for User Interface Design
 
 2nd Rule: Match Between the System and the Real World
+Hosting: https://afoxpl42.github.io/WDI-Nielsens-heuristics/
