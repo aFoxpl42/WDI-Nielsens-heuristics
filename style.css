@@ -16,6 +16,11 @@
     padding: 0;
 }
 
+/* DODANE: Płynne przewijanie do sekcji po kliknięciu w menu */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-main);
     line-height: 1.6;
@@ -30,6 +35,13 @@ header, main, footer {
     padding: 20px;
     background-color: var(--bg-surface);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 main {
@@ -100,6 +112,7 @@ nav a:hover, nav a:focus {
 section {
     padding-top: 20px; 
     margin-bottom: 40px;
+    scroll-margin-top: 200px;
 }
 
 .examples {
@@ -140,5 +153,20 @@ footer {
     
     .example {
         flex: 1 1 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    header, main, footer {
+        padding: 15px;
+    }
+    nav {
+        padding: 10px;
     }
 }
