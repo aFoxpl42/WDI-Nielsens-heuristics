@@ -155,22 +155,21 @@ footer {
 
 /* --- RWD (Responsywność) --- */
 
-/* --- Próg 1: Tablety i telefony (Swipe Menu) --- */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: row; /* Układa linki poziomo */
-        flex-wrap: nowrap; /* Zabrania zawijania do nowej linii */
-        overflow-x: auto; /* Dodaje poziome przewijanie */
-        -webkit-overflow-scrolling: touch; /* Płynne przewijanie na iOS */
-        padding-bottom: 5px; /* Miejsce na pasek przewijania */
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+        padding-bottom: 5px; 
     }
     
     nav a {
-        flex-shrink: 0; /* Przyciski nie będą się zgniatać */
-        white-space: nowrap; /* Tekst w przycisku nie łamie się na dwie linie */
+        flex-shrink: 0; 
+        white-space: nowrap; 
     }
 
-    /* Upiększenie paska przewijania (opcjonalne) */
+    
     nav ul::-webkit-scrollbar {
         height: 4px;
     }
